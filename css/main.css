@@ -1,0 +1,17 @@
+html{
+    --bgColor:#E9E3DF;
+    --hgColor:#000000;
+    --primaryColor:#FF7A30;
+    --secundaryColor:#465C88;
+}
+
+
+body{
+    background-color: var(--bgColor);
+}
+
+h1, h2, h5{
+    text-align: center;
+    margin-top: 10px;
+}
+
