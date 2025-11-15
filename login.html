@@ -4,17 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/components.css">
-
-    <title>Contacto</title>
+    <title>Login</title>
 </head>
 
 <body>
-    <!--Barra de navegación-->
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">XboxGamer</a>
@@ -46,35 +43,26 @@
             </div>
         </div>
     </nav>
-    </header>
-    <section>
-        <h2> ¿Dudas, sugerencias o aclaraciones?</h2>
-        <h5>Escribenos y con gusto te ayudamos</h5>
-    </section>
 
-    <main>
-        <form id=contactoForm>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" placeholder="Tu primer nombre" minlength="3">
-
-            <label for="apellido">Apellido</label>
-            <input id="apellido" type="text" placeholder="Apellido materno">
-
-            <label for="correo">Correo</label>
-            <input id="correo" type="email" placeholder="Correo asociado a tu cuenta">
-
-            <label for="telefono">Telefono</label>
-            <input id="telefono" type="tel" placeholder="Asociado a tu cuenta">
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" type="text" placeholder="Max 200 caracteres" maxlength="200"></textarea>
-
-            <button type="submit" id="btnContact">Enviar</button>
-
-        </form>
-    </main>
-
-    <!--Pie de página-->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card shadow p-4" style="width: 22rem;">
+            <h2 class="text-center mb-4">Iniciar sesión</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+            </form>
+            <p class="text-center mt-3 mb-0">
+                <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+            </p>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -117,13 +105,9 @@
     </footer>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
-
-
 </body>
 
 </html>

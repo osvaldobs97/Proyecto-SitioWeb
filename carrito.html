@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/components.css">
 
-    <title>Document</title>
+    <title>Carrito</title>
 </head>
 
 <body>
     <!--Barra de navegación-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">VideoGamer</a>
+            <a class="navbar-brand" href="#">XboxGamer</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,28 +35,101 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./carrito.html">Carrito</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sign-up.html">Sign-up</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="container my-5">
+        <h2 class="mb-4">Tu Carrito de Compras</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alan Wake 2</td>
+                        <td>$1,000.00</td>
+                        <td>
+                            <input type="number" class="form-control" value="1" min="1">
+                        </td>
+                        <td>$1,000.00</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dead Space</td>
+                        <td>$1,200.00</td>
+                        <td>
+                            <input type="number" class="form-control" value="2" min="1">
+                        </td>
+                        <td>$1,200.00</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-end">
+            <h4 class="me-4">Total: $2,200.00</h4>
+            <button class="btn btn-success">Proceder al Pago</button>
+        </div>
+
 
     <!--Pie de página-->
 
-    <footer>
-        <div class="card">
-            <div class="card-header">
-                Featured
+<footer>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase">XboxGamer</h5>
+                <p>Tu tienda de videojuegos favorita. Los mejores títulos para todas las plataformas.</p>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional
-                    content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./index.html" class="text-light text-decoration-none">Inicio</a></li>
+                    <li><a href="./Productos.html" class="text-light text-decoration-none">Productos</a></li>
+                    <li><a href="./Contacto.html" class="text-light text-decoration-none">Contactanos</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase">Síguenos</h5>
+                
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank" class="btn btn-outline-light btn-sm mb-2 w-100">Facebook</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank" class="btn btn-outline-light btn-sm mb-2 w-100">Instagram</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank" class="btn btn-outline-light btn-sm w-100">TikTok</a>
             </div>
         </div>
 
-    </footer>
+        <hr class="border-light">
+
+        <p class="text-center mb-0">
+            © 2025 XboxGamer — Todos los derechos reservados.
+        </p>
+        
+    </div>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

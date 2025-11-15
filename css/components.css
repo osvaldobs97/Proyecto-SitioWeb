@@ -6,7 +6,7 @@ html{
     --bgColor:#E9E3DF;
     --hgColor:#000000;
     --primaryColor:#FE7743;
-    --secundaryColor:#465C88;
+    --secundaryColor:#46884a;
 }
 
 
@@ -14,12 +14,31 @@ form{
     display: flex;
     flex-direction: column;
     color: var(--bgColor);
-    width: 350px;
+    background-color: var(--secundaryColor);
+}
+
+
+#contactoForm{
+    display: flex;
+    flex-direction: column;
+    color: var(--bgColor);
+    width: 450px;
     background-color: var(--secundaryColor);
     border-radius:10px;
-    padding: 20px 30px;
+    padding: 30px 40px;
     margin:50px auto;
 }
+
+#signUpForm{
+    display: flex;
+    flex-direction: column;
+    color: var(--bgColor);
+    background-color: var(--secundaryColor);
+    border-radius:10px;
+    padding: 40px 60px;
+    margin:auto auto;
+}
+
 
 label{
     display: block;
@@ -48,7 +67,7 @@ button{
 }
 
 button:hover{
-    background-color:rgba(50, 127, 242, 0.168);
+    background-color:rgba(29, 136, 29, 0.168);
 }
 
 .navbar {
@@ -92,7 +111,7 @@ footer {
 
 .custom-footer .card-header {
     background-color: var(--bgColor);
-    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(36, 169, 65, 0.4);
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -108,7 +127,7 @@ footer {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 25px rgba(0, 89, 255, 0.5);
+    box-shadow: 0 0 25px rgba(26, 150, 47, 0.5);
 }
 
 .card-img-top {
@@ -123,6 +142,14 @@ footer {
 }
 .card-text {
     color: #ffffff;
+}
+
+#btnContact {
+    background-color: var(--primaryColor);
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
